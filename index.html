@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <header>
+      <div id="heading">
+        <img src="img/money-flow.png" alt="" class="logo" />
+        <h1 class="heading-text">E<span>X</span>pense Tracker</h1>
+      </div>
+    </header>
+    <main>
+      <div class="form-container">
+        <form id="expense-tracker-form">
+          <div class="expense-container">
+            <label for="expense-title">Enter your expense title here: </label>
+            <input
+              type="text"
+              name="expense-title"
+              id="expense-input"
+              placeholder="Enter your text here"
+            />
+          </div>
+          <div class="expense-desc-container">
+            <label for="description">
+              Enter the description of your expense:
+            </label>
+            <input
+              type="text"
+              name="amount"
+              id="expense-desc-input"
+              placeholder="Enter your description here"
+            />
+          </div>
+          <div class="amount-container">
+            <label for="amount">
+              Enter the amount of your expense:
+              <span class="hidden" id="warnin">Number is required</span></label
+            >
+            <input
+              type="text"
+              name="amount"
+              id="amount-input"
+              placeholder="Enter your amount here"
+            />
+          </div>
+          <div class="btn-container">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+      <div class="total-expenses">
+        <p>Total expenses:</p>
+      </div>
+      <div class="list-container">
+        <button class="clear-all-btn">Clear all</button>
+        <p class="text-guide">Submit to create a tracker</p>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

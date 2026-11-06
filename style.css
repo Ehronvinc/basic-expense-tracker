@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background-color: #f0fdfa;
+}
+
+#heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.logo {
+  margin-top: 20px;
+  width: 70px;
+  height: auto;
+}
+
+.heading-text {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 900;
+  text-shadow: 1px 1px 0px rgb(0, 0, 0, 0.5);
+  color: #0f766e;
+  font-size: 3rem;
+  margin-top: 20px;
+}
+
+.heading-text span {
+  color: #dd3939;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #0f766e;
+  height: auto;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 30px;
+  box-shadow: 0px 0px 2px black;
+  border-radius: 10px;
+}
+
+.form-container form {
+  width: 100%;
+}
+
+.form-container input {
+  width: 100%;
+}
+
+.expense-container {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.expense-container input {
+  font-family: "Space Grotesk", sans-serif;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.45);
+}
+
+.expense-container input:hover {
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.25);
+}
+
+.expense-desc-container {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 900;
+  margin-top: 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.expense-desc-container input {
+  font-family: "Space Grotesk", sans-serif;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.45);
+}
+
+.expense-desc-container input:hover {
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.25);
+}
+
+.amount-container {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 900;
+  margin-top: 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.amount-container input {
+  font-family: "Space Grotesk", sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.45);
+}
+
+.amount-container input:hover {
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.25);
+}
+
+.warning-text {
+  font-family: "Space Grotesk", sans-serif;
+  color: #ee0b0b;
+  text-shadow: 1px 1px 0px rgb(0, 0, 0, 0.5);
+  font-size: 0.8rem;
+}
+
+.clear-all-btn {
+  font-family: "Space Grotesk", sans-serif;
+  border: none;
+  background-color: #14b8a6;
+  color: #ffffff;
+  font-weight: 900;
+  border-radius: 5px;
+  margin-left: 630px;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+
+.clear-all-btn:hover {
+  background-color: #0d9488;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.25);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-container button {
+  font-family: "Space Grotesk", sans-serif;
+  border: none;
+  background-color: #14b8a6;
+  color: #ffffff;
+  font-weight: 900;
+  border-radius: 5px;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+
+.btn-container button:hover {
+  background-color: #0d9488;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.25);
+}
+
+/* Expense information */
+.list-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  border-radius: 20px;
+  background-color: #0f766e;
+  box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.45);
+  padding: 15px;
+  height: 250px;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.list-expense-info {
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid #134e4a;
+  width: 100%;
+  box-shadow: 0px 0px 1px black;
+  padding: 15px 25px;
+}
+
+.text-guide {
+  margin-top: 50px;
+  font-family: "Space Grotesk", sans-serif;
+  color: #134e4a;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.expense-title-info {
+  font-weight: 900;
+  color: #134e4a;
+}
+
+.expense-desc-info {
+  overflow-wrap: anywhere;
+  font-size: 0.8rem;
+  color: #134e4ab6;
+}
+
+.expense-price-info {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 900;
+  color: #811818;
+}
+
+.remove-btn {
+  font-family: "Space Grotesk", sans-serif;
+  border: none;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: #dc2626;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.remove-btn:hover {
+  background-color: #b01f1f;
+}
+
+/* Total expenses */
+.total-expenses {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 900;
+  color: #134e4a;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
